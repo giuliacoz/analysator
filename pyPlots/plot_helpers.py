@@ -69,6 +69,10 @@ def numjacobian(inputarray):
         jac[:,:,0,0], jac[:,:,0,2] = np.gradient(inputarray[:,:,0], CELLSIZE)
         jac[:,:,1,0], jac[:,:,1,2] = np.gradient(inputarray[:,:,1], CELLSIZE)
         jac[:,:,2,0], jac[:,:,2,2] = np.gradient(inputarray[:,:,2], CELLSIZE)
+    elif PLANE=='YZ': #giulia
+        jac[:,:,0,1], jac[:,:,0,2] = np.gradient(inputarray[:,:,0], CELLSIZE)
+        jac[:,:,1,1], jac[:,:,1,2] = np.gradient(inputarray[:,:,1], CELLSIZE)
+        jac[:,:,2,1], jac[:,:,2,2] = np.gradient(inputarray[:,:,2], CELLSIZE)
     else:
         print("Error defining plane!")
         return -1

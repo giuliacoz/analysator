@@ -46,11 +46,12 @@ from plot_vdf_profiles import plot_vdf_profiles
 from plot_colormap3dslice import plot_colormap3dslice
 from plot_threeslice import plot_threeslice
 from plot_ionosphere import plot_ionosphere
+from plot_isosurface import plot_isosurface, plot_neutral_sheet
 
-try:
-    from plot_isosurface import plot_isosurface, plot_neutral_sheet
-except:
-    print("plot_isosurface not imported. To access it, use Python version >3.8 and install scikit-image.")
+#try:
+#    from plot_isosurface import plot_isosurface, plot_neutral_sheet
+#except:
+#    print("plot_isosurface not imported. To access it, use Python version >3.8 and install scikit-image.")
 
 from distutils.version import LooseVersion, StrictVersion
 import numpy as np, os

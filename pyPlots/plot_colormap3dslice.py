@@ -1345,12 +1345,12 @@ def plot_colormap3dslice(filename=None,
                 if internalcb=="SE": 
                     cbloc=4; cbdir="left";  horalign="right"
             # borderpad default value is 0.5, need to increase it to make room for colorbar title
-            cax = inset_axes(ax1, width="5%", height="35%", loc=cbloc, borderpad=1.5,
+            cax = inset_axes(ax1, width="3%", height="35%", loc=cbloc, borderpad=1.5,
                              bbox_transform=ax1.transAxes, bbox_to_anchor=(0,0,1,1))
         else:
             # Split existing axes to make room for colorbar
             divider = make_axes_locatable(ax1)
-            cax = divider.append_axes("right", size="5%", pad=0.05)
+            cax = divider.append_axes("right", size="3%", pad=0.05)
             cbdir="right"; horalign="left"
 
         # Colourbar title
